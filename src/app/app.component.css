@@ -1,0 +1,41 @@
+:host {
+    display: block;
+    background-image:
+        url(/assets/icons/bg-10x10.svg),
+        url(/assets/icons/bg-20x20.svg),
+        url(/assets/icons/bg-40x40.svg),
+        url(/assets/icons/bg-10x10.svg),
+        url(/assets/icons/bg-30x30.svg),
+        url(/assets/icons/bg-30x30.svg),
+        url(/assets/icons/bg-20x20.svg),
+        url(/assets/icons/bg-20x20.svg),
+        url(/assets/icons/bg-10x10.svg),
+        url(/assets/icons/bg-10x10.svg);
+
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+    34% 12%,
+    100% 5%,
+    -2% 30%,
+    69% 30%,
+    35% 56%,
+    74% 66%,
+    1% 86%,
+    71% 75%,
+    36% 74%,
+    85% 75%;
+    position: relative;
+    height: 100%;
+}
+:host::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    background-image: url(/assets/bg-top.svg), url(/assets/bg-bot.svg);
+    background-position: 0 0px, 0 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+}

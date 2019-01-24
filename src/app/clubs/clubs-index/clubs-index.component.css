@@ -1,9 +1,9 @@
 article {
     width: 170px;
     height: 94px;
-    background: white;
+    /* background: white;
     border-radius: 4px;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow); */
     overflow: hidden;
     display: grid;
     padding-top: 10px;
@@ -29,7 +29,6 @@ article figure {
     background: black;
     height: 50px;
     width: 50px;
-    border: 1px solid white;
     margin: 0 22px;
 }
 article p {

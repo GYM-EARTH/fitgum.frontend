@@ -1,15 +1,23 @@
-article {
-
-}
 article figure {
     margin: auto;
-    overflow: hidden;
     width: 70px;
     height: 70px;
     background: black;
     border-radius: 50px;
     box-shadow: var(--shadow);
     border: 2px solid var(--purple);
+    position: relative;
+}
+article figure::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    border: 2px solid white;
+    background: var(--green);
 }
 h1 {
     font-size: 12px;

@@ -7,4 +7,6 @@
     grid-template-areas: "header header" "news trainers" "clubs clubs";
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    position: relative;
+    z-index: 1;
 }

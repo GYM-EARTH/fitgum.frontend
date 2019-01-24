@@ -4,6 +4,35 @@ article {
     background: white;
     border-radius: 4px;
     box-shadow: var(--shadow);
+    position: relative;
+    transition: all .3s;
+}
+article:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+article::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: url(/assets/icons/star.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+article::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 10;
+    bottom: 10px;
+    width: 14px;
+    height: 2px;
+    background: url(/assets/icons/more.svg) no-repeat;
 }
 article figure {
     overflow: hidden;
@@ -11,4 +40,17 @@ article figure {
     background: black;
     height: 100px;
     border: 1px solid white;
+}
+article a {
+    font-size: 12px;
+    color: var(--dark);
+    line-height: 44px;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+article p {
+    padding: 0 10px;
+    font-size: 12px;
+    color: var(--dark);
 }

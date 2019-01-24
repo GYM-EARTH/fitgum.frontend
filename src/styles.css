@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(./assets/css/dark.css);
 :root {
     --pink: #bd10e0;
     --purple: #9013fe;
@@ -8,6 +8,11 @@
     --cyan: #50e3c2;
     --light: #9b9b9b;
     --dark: #4a4a4a;
+
+    --platinum: #e5e4e2;
+    --gold: #ffd700;
+    --silver: #c0c0c0;
+    --bronze: #cd7f32;
 
     --shadow: 0 0 10px rgba(0,0,0,.1);
 }
@@ -20,6 +25,11 @@
 *::after {
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
+    width: 1440px;
     font-family: Arial, Helvetica, sans-serif;
 }

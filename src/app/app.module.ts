@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
+import { NewsService } from './news.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +15,10 @@ import { NewsIndexComponent } from './news/news-index/news-index.component';
 import { TrainersIndexComponent } from './trainers/trainers-index/trainers-index.component';
 import { ClubsComponent } from './clubs/clubs.component';
 import { ClubsIndexComponent } from './clubs/clubs-index/clubs-index.component';
+import { NewsListComponent } from './news/news-list/news-list.component';
+import { ClubsListComponent } from './clubs/clubs-list/clubs-list.component';
+import { FlaersComponent } from './flaers/flaers.component';
+import { TrainersListComponent } from './trainers/trainers-list/trainers-list.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +31,18 @@ import { ClubsIndexComponent } from './clubs/clubs-index/clubs-index.component';
     NewsIndexComponent,
     TrainersIndexComponent,
     ClubsComponent,
-    ClubsIndexComponent
+    ClubsIndexComponent,
+    NewsListComponent,
+    ClubsListComponent,
+    FlaersComponent,
+    TrainersListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [NewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

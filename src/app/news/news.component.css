@@ -1,15 +1,18 @@
 :host {
-    grid-area: news;
-}
-section {
+    width: 1366px;
+    margin: auto;
+    display: block;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "h h h h";
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    z-index: 1;
 }
-h1 {
+p {
     font-size: 14px;
+    color: var(--dark);
     line-height: 44px;
-    grid-area: h;
-    color: var(--light);
+    font-weight: bold;
 }

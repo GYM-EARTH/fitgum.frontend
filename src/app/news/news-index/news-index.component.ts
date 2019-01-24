@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-news-index',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news-index.component.css']
 })
 export class NewsIndexComponent implements OnInit {
+
+  @Input() index;
 
   constructor() { }
 
