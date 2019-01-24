@@ -1,0 +1,15 @@
+:host {
+    grid-area: clubs;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "h h h h h h h h h h";
+    grid-gap: 10px;
+}
+h1 {
+    font-size: 14px;
+    line-height: 44px;
+    grid-area: h;
+    color: var(--light);
+}

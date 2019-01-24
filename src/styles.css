@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --pink: #bd10e0;
+    --purple: #9013fe;
+    --blue: #4a90e2;
+    --green: #7ed321;
+    --orange: #f5a623;
+    --cyan: #50e3c2;
+    --light: #9b9b9b;
+    --dark: #4a4a4a;
+
+    --shadow: 0 0 10px rgba(0,0,0,.1);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
