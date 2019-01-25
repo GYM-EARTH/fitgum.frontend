@@ -1,0 +1,28 @@
+.light { background: white; }
+.light .theme { color: black; }
+.light app-news-index article { background: white; }
+.light app-news-index article figure { border-color: white; }
+.light app-news-index article a { color: var(--dark); }
+.light app-news-index article p { color: var(--dark); }
+.light app-news-index article::before { background-image: url(/assets/icons/star-w.svg); }
+.light app-trainers-index article figure::after { border-color: white; }
+.light app-news-list h1 { color: var(--light); }
+.light .theme::before { background-image: url(/assets/icons/dark.svg); }
+.light app-trainers-list h1 { color: var(--light); }
+.light app-trainers-index h1 { color: var(--dark); }
+.light app-header .login { color: black; }
+.light app-clubs-index { background: white; }
+
+.light app-root {
+    background-image:
+    url(/assets/icons/bg-w-10x10.svg),
+    url(/assets/icons/bg-w-20x20.svg),
+    url(/assets/icons/bg-w-40x40.svg),
+    url(/assets/icons/bg-w-10x10.svg),
+    url(/assets/icons/bg-w-30x30.svg),
+    url(/assets/icons/bg-w-30x30.svg),
+    url(/assets/icons/bg-w-20x20.svg),
+    url(/assets/icons/bg-w-20x20.svg),
+    url(/assets/icons/bg-w-10x10.svg),
+    url(/assets/icons/bg-w-10x10.svg);
+}

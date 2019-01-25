@@ -14,12 +14,16 @@ h1 {
     color: var(--light);
 }
 app-clubs-index {
-    background: white;
-    border-radius: 4px;
     box-shadow: var(--shadow);
     display: block;
+    transition: transform .3s;
 }
-.gold {background: var(--gold);}
+app-clubs-index:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+/* .gold {background: var(--gold);}
 .silver {background: var(--silver);}
 .bronze {background: var(--bronze);}
-.platinum {background: var(--platinum);}
+.platinum {background: var(--platinum);} */

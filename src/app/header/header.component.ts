@@ -7,9 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  theme: string;
+
+  constructor() {
+    const hours = new Date().getHours()
+    const isDayTime = hours >= 6 && hours <= 18;
+
+    if (isDayTime) {
+      this.theme = 'Dark';
+      document.body.classList.add('light');
+    } else {
+      this.theme = 'Light';
+      document.body.classList.add('dark');
+    }
+  }
 
   ngOnInit() {
+    this.theme = 'Dark';
+  }
+
+  changeTheme() {
+    if (this.theme == 'Light') {
+      this.theme = 'Dark';
+      document.body.classList.remove('dark');
+      document.body.classList.add('light');
+    } else {
+      this.theme = 'Light';
+      document.body.classList.remove('light');
+      document.body.classList.add('dark');
+    }
   }
 
 }

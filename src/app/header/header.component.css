@@ -2,18 +2,20 @@
     padding: 60px 90px;
     display: flex;
     grid-area: header;
+    position: relative;
+    z-index: 1;
 }
-a {
+header a {
     text-shadow: var(--shadow);
     line-height: 44px;
     font-size: 26px;
     text-decoration: none;
     font-weight: bold;
 }
-a span:first-child {
+header a span:first-child {
     color: var(--pink);
 }
-a span:last-child {
+header a span:last-child {
     color: var(--purple);
 }
 .theme {
@@ -29,10 +31,18 @@ a span:last-child {
     display: inline-block;
     width: 12px;
     height: 20px;
-    background: url(/assets/icons/dark.svg) no-repeat;
+    background-repeat: no-repeat;
     margin-right: 10px;
     transition: transform .3s;
 }
 .theme:hover::before {
     transform: translateY(5px) rotate(-10deg);
+}
+.login {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 44px;
+    padding: 0 44px;
+    text-shadow: var(--shadow);  
+    text-decoration: none;
 }

@@ -1,0 +1,57 @@
+:host {
+    width: 1366px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+p {
+    font-size: 14px;
+    color: var(--dark);
+    line-height: 44px;
+    font-weight: bold;
+}
+main {
+
+}
+input {
+    font-family: Arial, Helvetica, sans-serif;
+}
+form {
+    margin: 60px auto;
+    width: 350px;
+    display: flex;
+    flex-flow: column;
+}
+input[type="text"] {
+    height: 44px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background: var(--purple);
+    padding: 0 22px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: var(--shadow);
+}
+input[type="text"]::placeholder {
+    color: white;
+    font-weight: bold; 
+}
+input[type=submit] {
+    width: 25%;
+    height: 44px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background: #B8E986;
+    cursor: pointer;
+}

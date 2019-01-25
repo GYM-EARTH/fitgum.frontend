@@ -19,6 +19,7 @@ import { NewsListComponent } from './news/news-list/news-list.component';
 import { ClubsListComponent } from './clubs/clubs-list/clubs-list.component';
 import { FlaersComponent } from './flaers/flaers.component';
 import { TrainersListComponent } from './trainers/trainers-list/trainers-list.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TrainersListComponent } from './trainers/trainers-list/trainers-list.co
     NewsListComponent,
     ClubsListComponent,
     FlaersComponent,
-    TrainersListComponent
+    TrainersListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

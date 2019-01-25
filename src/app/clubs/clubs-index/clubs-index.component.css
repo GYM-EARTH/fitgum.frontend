@@ -15,7 +15,7 @@ article {
 h1 {
     grid-area: h;
     height: 17px;
-    background: black;
+    background: var(--purple);
     color: white;
     font-size: 12px;
     text-transform: uppercase;

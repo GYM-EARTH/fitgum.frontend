@@ -1,10 +1,9 @@
 :host {
     width: 1366px;
     margin: auto;
-    display: block;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "news trainers" "clubs clubs";
+    grid-template-areas: "news trainers" "clubs clubs";
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     position: relative;

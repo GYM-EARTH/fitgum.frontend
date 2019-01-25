@@ -1,18 +1,6 @@
 :host {
     display: block;
-    background-image:
-        url(/assets/icons/bg-10x10.svg),
-        url(/assets/icons/bg-20x20.svg),
-        url(/assets/icons/bg-40x40.svg),
-        url(/assets/icons/bg-10x10.svg),
-        url(/assets/icons/bg-30x30.svg),
-        url(/assets/icons/bg-30x30.svg),
-        url(/assets/icons/bg-20x20.svg),
-        url(/assets/icons/bg-20x20.svg),
-        url(/assets/icons/bg-10x10.svg),
-        url(/assets/icons/bg-10x10.svg);
-
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat;
     background-position:
     34% 12%,
     100% 5%,

@@ -16,12 +16,12 @@ article figure::after {
     position: absolute;
     top: 5px;
     right: -5px;
-    border: 2px solid white;
+    border-width: 2px;
+    border-style: solid;
     background: var(--green);
 }
 h1 {
     font-size: 12px;
-    color: var(--dark);
     text-align: center;
     line-height: 44px;
 }

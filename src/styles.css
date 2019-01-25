@@ -1,4 +1,5 @@
 @import url(./assets/css/dark.css);
+@import url(./assets/css/light.css);
 :root {
     --pink: #bd10e0;
     --purple: #9013fe;
