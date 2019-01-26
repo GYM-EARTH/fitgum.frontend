@@ -1,7 +1,7 @@
 article {
     width: 170px;
     height: 94px;
-    background: white;
+    /* background: white; */
     border-radius: 4px;
     /* box-shadow: var(--shadow); */
     overflow: hidden;
