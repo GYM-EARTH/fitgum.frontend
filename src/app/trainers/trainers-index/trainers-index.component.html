@@ -1,4 +1,4 @@
-<article>
-  <figure></figure>
-  <h1>Имя</h1>
+<article [routerLink]="['/trainers', trainer.slug]">
+  <figure><img src="https://fitgum.ru/files/{{trainer?.photo}}" alt=""></figure>
+  <h1>{{trainer?.name}}</h1>
 </article>

@@ -1,4 +1,4 @@
 <section>
     <h1>Тренеры</h1>
-    <app-trainers-index></app-trainers-index>
+    <app-trainers-index [trainer]="i" *ngFor="let i of trainers"></app-trainers-index>
   </section>

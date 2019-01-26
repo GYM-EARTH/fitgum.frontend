@@ -1,0 +1,128 @@
+:host {
+    width: 1366px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+aside {
+    padding: 44px 44px;
+}
+
+.worktime h5 {
+    font-size: 14px;
+    line-height: 44px;
+    color: var(--light);
+}
+.userbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 44px;
+    padding: 22px;
+}
+.userbar figure {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid var(--purple);
+    position: relative;
+}
+.userbar figure::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    border-width: 4px;
+    border-style: solid;
+    background: var(--green);
+    z-index: 2;
+}
+.userbar figure img {
+    width: 100%;
+    border-radius: 50%;
+}
+.userbar div h1 {
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 22px;
+}
+.userbar div ul {
+    font-size: 14px;
+    display: flex;
+    line-height: 44px;
+    list-style: none;
+    justify-content: space-between;
+    color: var(--light);
+}
+.userbar div ul span {
+    font-weight: bold;
+    color: var(--pink);
+}
+.userbar div p {
+    color: var(--light);
+    font-size: 14px;
+}
+
+.communicate {
+    width: 240px;
+    height: 140px;
+}
+.communicate nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 44px;
+    padding: 0 22px;
+    font-weight: bold;
+    color: var(--light);
+}
+.communicate nav a:hover {
+    color: var(--dark);
+}
+
+
+
+/* SERVICE  */
+
+.service {
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "h h h";
+    grid-gap: 10px;
+}
+.service > h1 {
+    grid-area: h;
+    font-size: 14px;
+    color: var(--light);
+}
+.service article {
+    overflow: hidden;
+    padding: 22px 0;
+}
+.service article figure {
+    margin: 0 22px;
+    width: 35px;
+    height: 35px;
+    background: url(/assets/icons/pay.svg) no-repeat;
+    float: left;
+    background-size: contain;
+}
+.service article h1 {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--dark);
+}
+.service p {
+    font-size: 14px;
+    color: var(--light)
+}
+.service h1 span {
+    color: var(--green);
+}

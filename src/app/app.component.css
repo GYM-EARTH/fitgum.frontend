@@ -15,15 +15,15 @@
     position: relative;
     height: 100%;
 }
-/* :host::after {
+:host::after {
     content: "";
     position: absolute;
     left: 0px;
     top: 0;
     right: 0px;
     bottom: 0;
-    background-image: url(/assets/bg-top.svg), url(/assets/bg-bot.svg);
-    background-position: 0 0px, 0 100%;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url(/assets/bg-top.svg);
+    background-position: 0 0px;
+    background-repeat: no-repeat;
     background-size: contain;
-} */
+}

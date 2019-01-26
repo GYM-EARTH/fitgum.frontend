@@ -13,6 +13,7 @@
 .light app-header .login { color: black; }
 .light app-clubs-index { background: white; }
 .light app-news-show article figure { border-color: white; }
+.light app-trainers-show .userbar figure::after { border-color: white; }
 
 .light app-root {
     background-image:

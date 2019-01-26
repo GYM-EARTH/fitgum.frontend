@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="44px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="51px" height="55px" viewBox="0 0 51 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 10</title>
+    <title>Group 9</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+        <filter x="-90.9%" y="-91.4%" width="285.7%" height="248.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
             <stop stop-color="#FBD249" offset="0%"></stop>
             <stop stop-color="#F5A623" offset="100%"></stop>
         </linearGradient>
-        <ellipse id="path-2" cx="6.3" cy="7.7" rx="4.9" ry="6.3"></ellipse>
-        <filter x="-158.2%" y="-123.0%" width="416.3%" height="346.0%" filterUnits="objectBoundingBox" id="filter-3">
+        <ellipse id="path-3" cx="6.3" cy="7.7" rx="4.9" ry="6.3"></ellipse>
+        <filter x="-158.2%" y="-123.0%" width="416.3%" height="346.0%" filterUnits="objectBoundingBox" id="filter-4">
             <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
             <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
@@ -18,8 +27,8 @@
             <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <ellipse id="path-4" cx="16.1" cy="7.7" rx="4.9" ry="6.3"></ellipse>
-        <filter x="-158.2%" y="-123.0%" width="416.3%" height="346.0%" filterUnits="objectBoundingBox" id="filter-5">
+        <ellipse id="path-5" cx="16.1" cy="7.7" rx="4.9" ry="6.3"></ellipse>
+        <filter x="-158.2%" y="-123.0%" width="416.3%" height="346.0%" filterUnits="objectBoundingBox" id="filter-6">
             <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
             <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
@@ -28,33 +37,33 @@
             <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <linearGradient x1="100%" y1="0%" x2="1.11022302e-14%" y2="100%" id="linearGradient-6">
+        <linearGradient x1="100%" y1="0%" x2="1.11022302e-14%" y2="100%" id="linearGradient-7">
             <stop stop-color="#E024F2" offset="0%"></stop>
             <stop stop-color="#BD10E0" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="0%" y1="1.72254642e-14%" x2="100%" y2="100%" id="linearGradient-7">
+        <linearGradient x1="0%" y1="1.72254642e-14%" x2="100%" y2="100%" id="linearGradient-8">
             <stop stop-color="#E024F2" offset="0%"></stop>
             <stop stop-color="#BD10E0" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="EB" transform="translate(-336.000000, -844.000000)" fill-rule="nonzero">
+        <g id="EB" transform="translate(-330.000000, -843.000000)" fill-rule="nonzero">
             <g id="Group-15" transform="translate(337.000000, 388.000000)">
                 <g id="Group-10" transform="translate(3.000000, 465.000000)">
-                    <g id="Group-9">
+                    <g id="Group-9" filter="url(#filter-1)">
                         <g id="Group-8">
                             <g id="Group-6" transform="translate(4.200000, 0.000000)">
                                 <g id="Oval" transform="translate(6.300000, 7.700000) rotate(-10.000000) translate(-6.300000, -7.700000) ">
-                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                                    <use stroke="url(#linearGradient-1)" stroke-width="1" xlink:href="#path-2"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                    <use stroke="url(#linearGradient-2)" stroke-width="1" xlink:href="#path-3"></use>
                                 </g>
                                 <g id="Oval" transform="translate(16.100000, 7.700000) rotate(10.000000) translate(-16.100000, -7.700000) ">
-                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
-                                    <use stroke="url(#linearGradient-1)" stroke-width="1" xlink:href="#path-4"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                    <use stroke="url(#linearGradient-2)" stroke-width="1" xlink:href="#path-5"></use>
                                 </g>
                             </g>
-                            <path d="M2,9.8 L13.4,9.8 C14.5045695,9.8 15.4,10.6954305 15.4,11.8 L15.4,35 L2,35 C0.8954305,35 3.87373717e-15,34.1045695 1.77635684e-15,33 L0,11.8 C-1.3527075e-16,10.6954305 0.8954305,9.8 2,9.8 Z" id="Rectangle" fill="url(#linearGradient-6)"></path>
-                            <path d="M17.4,9.8 L28.8,9.8 C29.9045695,9.8 30.8,10.6954305 30.8,11.8 L30.8,33 C30.8,34.1045695 29.9045695,35 28.8,35 L15.4,35 L15.4,11.8 C15.4,10.6954305 16.2954305,9.8 17.4,9.8 Z" id="Rectangle" fill="url(#linearGradient-7)"></path>
+                            <path d="M2,9.8 L13.4,9.8 C14.5045695,9.8 15.4,10.6954305 15.4,11.8 L15.4,35 L2,35 C0.8954305,35 3.87373717e-15,34.1045695 1.77635684e-15,33 L0,11.8 C-1.3527075e-16,10.6954305 0.8954305,9.8 2,9.8 Z" id="Rectangle" fill="url(#linearGradient-7)"></path>
+                            <path d="M17.4,9.8 L28.8,9.8 C29.9045695,9.8 30.8,10.6954305 30.8,11.8 L30.8,33 C30.8,34.1045695 29.9045695,35 28.8,35 L15.4,35 L15.4,11.8 C15.4,10.6954305 16.2954305,9.8 17.4,9.8 Z" id="Rectangle" fill="url(#linearGradient-8)"></path>
                             <polygon id="Rectangle" fill="#9013FE" transform="translate(15.400000, 22.400000) rotate(90.000000) translate(-15.400000, -22.400000) " points="2.8 21 28 21 28 23.8 2.8 23.8"></polygon>
                         </g>
                         <rect id="Rectangle" fill="#9013FE" x="0" y="9.8" width="30.8" height="4.2" rx="2"></rect>

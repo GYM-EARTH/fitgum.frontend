@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { NewsService } from './news.service';
 import { ClubsService } from './clubs.service';
+import { TrainersService } from './trainers.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { TrainersListComponent } from './trainers/trainers-list/trainers-list.co
 import { LoginComponent } from './login/login.component';
 import { NewsShowComponent } from './news/news-show/news-show.component';
 import { ClubsShowComponent } from './clubs/clubs-show/clubs-show.component';
+import { TrainersShowComponent } from './trainers/trainers-show/trainers-show.component';
 
 @NgModule({
   declarations: [
@@ -42,14 +44,15 @@ import { ClubsShowComponent } from './clubs/clubs-show/clubs-show.component';
     TrainersListComponent,
     LoginComponent,
     NewsShowComponent,
-    ClubsShowComponent
+    ClubsShowComponent,
+    TrainersShowComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [NewsService, ClubsService],
+  providers: [NewsService, ClubsService, TrainersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

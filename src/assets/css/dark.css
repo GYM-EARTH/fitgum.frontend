@@ -12,8 +12,8 @@
 .dark app-trainers-index h1 { color: var(--light); }
 .dark app-header .login { color: white; }
 .dark app-clubs-index { background: black; }
-
 .dark app-news-show article figure { border-color: black; }
+.dark app-trainers-show .userbar figure::after { border-color: black; }
 
 .dark app-root {
     background-image:
