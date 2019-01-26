@@ -30,8 +30,5 @@ html {
     height: 100%;
 }
 body {
-    height: 100%;
-    width: 1440px;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 700px;
 }

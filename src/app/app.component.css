@@ -15,7 +15,7 @@
     position: relative;
     height: 100%;
 }
-:host::after {
+/* :host::after {
     content: "";
     position: absolute;
     left: 0px;
@@ -26,4 +26,4 @@
     background-position: 0 0px, 0 100%;
     background-repeat: no-repeat, no-repeat;
     background-size: contain;
-}
+} */
