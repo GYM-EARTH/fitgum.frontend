@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { NewsService } from './news.service';
+import { ClubsService } from './clubs.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { ClubsListComponent } from './clubs/clubs-list/clubs-list.component';
 import { FlaersComponent } from './flaers/flaers.component';
 import { TrainersListComponent } from './trainers/trainers-list/trainers-list.component';
 import { LoginComponent } from './login/login.component';
+import { NewsShowComponent } from './news/news-show/news-show.component';
 
 @NgModule({
   declarations: [
@@ -37,14 +39,15 @@ import { LoginComponent } from './login/login.component';
     ClubsListComponent,
     FlaersComponent,
     TrainersListComponent,
-    LoginComponent
+    LoginComponent,
+    NewsShowComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [NewsService],
+  providers: [NewsService, ClubsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

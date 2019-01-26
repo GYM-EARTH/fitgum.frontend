@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-clubs-index',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clubs-index.component.css']
 })
 export class ClubsIndexComponent implements OnInit {
+
+  @Input() club;
 
   constructor() { }
 

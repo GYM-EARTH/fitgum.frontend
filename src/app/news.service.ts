@@ -13,4 +13,8 @@ export class NewsService {
     return this.http.get<{data: News[]}>('https://fitgum.ru/api/news');
   }
 
+  public getTop() {
+    return this.http.get<{data: News[]}>('https://fitgum.ru/api/news');
+  }
+
 }

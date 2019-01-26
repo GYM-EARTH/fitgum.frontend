@@ -41,6 +41,9 @@ article figure {
     border-width: 1px;
     border-style: solid;
 }
+article figure img {
+    max-width: 100%;
+}
 article a {
     font-size: 12px;
     line-height: 44px;

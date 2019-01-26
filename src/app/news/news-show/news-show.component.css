@@ -1,0 +1,9 @@
+:host {
+    grid-area: show;
+}
+header {
+    line-height: 44px;
+    color: var(--light);
+    font-size: 14px;
+    font-weight: bold;
+}

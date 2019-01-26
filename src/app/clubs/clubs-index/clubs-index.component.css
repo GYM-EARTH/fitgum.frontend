@@ -8,15 +8,16 @@ article {
     display: grid;
     padding-top: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "h h" "f t";
+    grid-template-areas: "h h" "f f";
     grid-template-rows: auto 1fr;
     align-items: center;
 }
 h1 {
     grid-area: h;
     height: 17px;
-    background: var(--purple);
-    color: white;
+    /* background: var(--purple); */
+    color: var(--dark);
+    text-align: center;
     font-size: 12px;
     text-transform: uppercase;
     line-height: 17px;
@@ -25,13 +26,15 @@ h1 {
 article figure {
     grid-area: f;
     overflow: hidden;
-    border-radius: 50%;
-    background: black;
     height: 50px;
     width: 50px;
-    margin: 0 22px;
+    margin: 0 auto;
+}
+article figure img {
+    max-width: 100%;
 }
 article p {
+    display: none;
     grid-area: t;
     font-size: 12px;
     color: var(--light);

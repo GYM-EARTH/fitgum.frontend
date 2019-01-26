@@ -1,5 +1,5 @@
-<article>
-  <figure></figure>
-  <a href="">{{index.title}}</a>
-  <p>{{index.description}}</p>
+<article [routerLink]="['/news', index.slug]">
+  <figure><img src="https://fitgum.ru/files/{{index.preview}}" alt=""></figure>
+  <a href="">Уход</a>
+  <p>{{index.title}}</p>
 </article>
