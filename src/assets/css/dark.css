@@ -13,6 +13,8 @@
 .dark app-header .login { color: white; }
 .dark app-clubs-index { background: black; }
 
+.dark app-news-show article figure { border-color: black; }
+
 .dark app-root {
     background-image:
     url(/assets/icons/bg-b-10x10.svg),

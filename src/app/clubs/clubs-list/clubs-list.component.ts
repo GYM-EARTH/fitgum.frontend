@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ClubsService } from '../../clubs.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-clubs-list',
@@ -8,12 +7,13 @@ import { ClubsService } from '../../clubs.service';
 })
 export class ClubsListComponent implements OnInit {
 
-  public clubs;
+  @Input() clubs;
 
-  constructor(private clubsService: ClubsService) { }
+
+  constructor() { }
 
   ngOnInit() {
-    this.clubsService.getAll().subscribe(clubs => this.clubs = clubs.data);
+    
     
   }
 

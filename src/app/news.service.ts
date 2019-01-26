@@ -17,4 +17,8 @@ export class NewsService {
     return this.http.get<{data: News[]}>('https://fitgum.ru/api/news');
   }
 
+  public getBy(slug: string) {
+    return this.http.get<{News}>(`https://fitgum.ru/api/news/${slug}`);
+  }
+
 }

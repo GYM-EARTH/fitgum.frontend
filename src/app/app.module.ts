@@ -22,6 +22,7 @@ import { FlaersComponent } from './flaers/flaers.component';
 import { TrainersListComponent } from './trainers/trainers-list/trainers-list.component';
 import { LoginComponent } from './login/login.component';
 import { NewsShowComponent } from './news/news-show/news-show.component';
+import { ClubsShowComponent } from './clubs/clubs-show/clubs-show.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { NewsShowComponent } from './news/news-show/news-show.component';
     FlaersComponent,
     TrainersListComponent,
     LoginComponent,
-    NewsShowComponent
+    NewsShowComponent,
+    ClubsShowComponent
   ],
   imports: [
     BrowserModule,

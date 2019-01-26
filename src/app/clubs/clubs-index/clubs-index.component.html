@@ -1,5 +1,5 @@
-<article>
-  <h1>{{club.title}}</h1>
+<article [routerLink]="['/clubs', club.slug]">
+  <h1>{{club?.title}}</h1>
   <figure><img src="https://fitgum.ru/files/{{club.logo}}" alt=""></figure>
   <p>fitness club</p>
 </article>

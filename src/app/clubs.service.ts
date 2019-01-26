@@ -12,4 +12,12 @@ export class ClubsService {
   public getAll() {
     return this.http.get<{data: Clubs[]}>('https://fitgum.ru/api/clubs');
   }
+
+  public getTop() {
+    return this.http.get<{data: Clubs[]}>('https://fitgum.ru/api/clubs');
+  }
+
+  public getBy(slug: string) {
+    return this.http.get<{Clubs}>(`https://fitgum.ru/api/clubs/${slug}`);
+  }
 }
