@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ClubsService } from '../../clubs.service';
+import { TrainersService } from '../../trainers.service';
 
 @Component({
   selector: 'app-clubs-show',
@@ -10,9 +11,11 @@ import { ClubsService } from '../../clubs.service';
 export class ClubsShowComponent implements OnInit {
 
   public club;
+  public trainers;
   
   constructor(
     private clubsService: ClubsService,
+    private trainersService: TrainersService,
     private route: ActivatedRoute) {
   }
 
@@ -22,6 +25,9 @@ export class ClubsShowComponent implements OnInit {
         this.club = clubs;
       });
     });
+
+    this.trainersService.getAll().subscribe(trainers => this.trainers = trainers.data);
+
   }
 
 }

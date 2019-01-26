@@ -15,7 +15,7 @@
   <article>
     <figure class="tvclub">Реклама клуба</figure>
     <section class="bar">
-        <figure><img src="https://fitgum.ru/files/{{club.logo}}" alt=""></figure>
+        <figure><img src="https://fitgum.ru/files/{{club?.logo}}" alt=""></figure>
         <div>
           <h1>{{club?.title}}</h1>
           <h1>Fitness club</h1>
@@ -36,7 +36,7 @@
           <p><span>#1</span> в рейтинге</p>
         </section>
     </section>
-    <app-trainers-list></app-trainers-list>
+    <app-trainers-list [trainers]="trainers"></app-trainers-list>
     <section class="service">
       <h1>Активные услуги клуба</h1>
       <article>

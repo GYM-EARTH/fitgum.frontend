@@ -1,9 +1,9 @@
 article {
     width: 170px;
     height: 94px;
-    /* background: white;
+    background: white;
     border-radius: 4px;
-    box-shadow: var(--shadow); */
+    /* box-shadow: var(--shadow); */
     overflow: hidden;
     display: grid;
     padding-top: 10px;
@@ -15,8 +15,8 @@ article {
 h1 {
     grid-area: h;
     height: 17px;
-    /* background: var(--purple); */
-    color: var(--dark);
+    background: var(--purple);
+    color: white;
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
