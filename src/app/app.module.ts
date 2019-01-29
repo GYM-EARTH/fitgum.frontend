@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { NewsService } from './news.service';
 import { ClubsService } from './clubs.service';
@@ -25,6 +26,7 @@ import { LoginComponent } from './login/login.component';
 import { NewsShowComponent } from './news/news-show/news-show.component';
 import { ClubsShowComponent } from './clubs/clubs-show/clubs-show.component';
 import { TrainersShowComponent } from './trainers/trainers-show/trainers-show.component';
+import { LiveComponent } from './live/live.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +47,14 @@ import { TrainersShowComponent } from './trainers/trainers-show/trainers-show.co
     LoginComponent,
     NewsShowComponent,
     ClubsShowComponent,
-    TrainersShowComponent
+    TrainersShowComponent,
+    LiveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [NewsService, ClubsService, TrainersService],
   bootstrap: [AppComponent]
