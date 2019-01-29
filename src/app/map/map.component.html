@@ -1,0 +1,15 @@
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [styles]="style"
+  [zoom]="12"
+  [streetViewControl]="false"
+  [zoomControl]="false"
+  [scrollwheel]="false">
+  <agm-marker *ngFor="let marker of markers"
+  [iconUrl]="'https://fitgum.ru/assets/icons/geo.svg'"
+  [latitude]="marker.latitude"
+  [longitude]="marker.longitude"></agm-marker>
+</agm-map>

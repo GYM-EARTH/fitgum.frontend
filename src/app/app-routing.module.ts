@@ -10,6 +10,7 @@ import { NewsShowComponent } from './news/news-show/news-show.component';
 import { ClubsShowComponent } from './clubs/clubs-show/clubs-show.component';
 import { TrainersShowComponent } from './trainers/trainers-show/trainers-show.component';
 import { LiveComponent } from './live/live.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,7 +22,10 @@ const routes: Routes = [
   { path: 'news/:id', component: NewsShowComponent },
   { path: 'clubs/:id', component: ClubsShowComponent },
   { path: 'trainers/:id', component: TrainersShowComponent },
-  { path: 'live', component: LiveComponent }
+  { path: 'live', component: LiveComponent },
+  { path: 'live#1', component: LiveComponent },
+  { path: 'map', component: MapComponent }
+
 ];
 
 @NgModule({

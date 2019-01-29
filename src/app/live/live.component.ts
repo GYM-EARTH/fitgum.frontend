@@ -45,7 +45,7 @@ export class LiveComponent implements OnInit {
 
     document.querySelector('form').addEventListener('submit', function (ev) {
       ev.preventDefault()
-      peer.signal(JSON.parse(document.querySelector('#incoming').value))
+      peer.signal(JSON.parse((<HTMLInputElement>document.querySelector('#incoming')).value))
       // console.log(document.querySelector('#incoming').value);
     })
     peer.on('stream', function (stream) {

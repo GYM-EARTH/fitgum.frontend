@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { NewsService } from './news.service';
 import { ClubsService } from './clubs.service';
 import { TrainersService } from './trainers.service';
@@ -27,6 +29,7 @@ import { NewsShowComponent } from './news/news-show/news-show.component';
 import { ClubsShowComponent } from './clubs/clubs-show/clubs-show.component';
 import { TrainersShowComponent } from './trainers/trainers-show/trainers-show.component';
 import { LiveComponent } from './live/live.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -48,13 +51,17 @@ import { LiveComponent } from './live/live.component';
     NewsShowComponent,
     ClubsShowComponent,
     TrainersShowComponent,
-    LiveComponent
+    LiveComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA4dy2oYRqxWaIGS-BaTEzGSIjZdhvfghU'
+    })
   ],
   providers: [NewsService, ClubsService, TrainersService],
   bootstrap: [AppComponent]

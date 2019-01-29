@@ -15,7 +15,7 @@
 .dark app-news-show article figure { border-color: black; }
 .dark app-trainers-show .userbar figure::after { border-color: black; }
 
-.dark app-root {
+/* .dark app-root {
     background-image:
     url(/assets/icons/bg-b-10x10.svg),
     url(/assets/icons/bg-b-20x20.svg),
@@ -27,4 +27,4 @@
     url(/assets/icons/bg-b-20x20.svg),
     url(/assets/icons/bg-b-10x10.svg),
     url(/assets/icons/bg-b-10x10.svg);
-}
+} */

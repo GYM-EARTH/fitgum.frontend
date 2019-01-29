@@ -1,6 +1,6 @@
 :host {
     display: block;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position:
     34% 12%,
     100% 5%,
@@ -11,19 +11,7 @@
     1% 86%,
     71% 75%,
     36% 74%,
-    85% 75%;
+    85% 75%; */
     position: relative;
     height: 100%;
-}
-:host::after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0;
-    right: 0px;
-    bottom: 0;
-    background-image: url(/assets/bg-top.svg);
-    background-position: 0 0px;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
