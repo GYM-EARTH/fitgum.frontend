@@ -2,3 +2,9 @@ button {
     position: relative;
     z-index: 99;
 }
+video {
+    width: 700px;
+    height: 300px;
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+}
