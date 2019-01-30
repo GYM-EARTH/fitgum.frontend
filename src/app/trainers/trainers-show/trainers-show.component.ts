@@ -11,7 +11,6 @@ import { TrainersService } from '../../trainers.service';
 export class TrainersShowComponent implements OnInit {
 
   public trainer;
-  public trainers
   
   constructor(
     private trainersService: TrainersService,

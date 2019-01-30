@@ -1,33 +1,34 @@
 <aside>
 
     <section class="worktime">
-      <h5>Время</h5>
+      <h5>{{trainer?.email}}</h5>
+      <h5>{{trainer?.phone}}</h5>
   
     </section>
   </aside>
   <main>
     <article>
       <section class="userbar">
-          <figure><img src="https://fitgum.ru/files/{{trainer.photo}}" alt=""></figure>
+          <figure><img src="https://fitgum.ru/files/{{trainer?.photo}}" alt=""></figure>
           <div>
-            <h1>{{trainer?.name}}</h1>
-            <h1>Fitness trainer</h1>
+            <h1>{{trainer?.name}} {{trainer?.surname}}</h1>
+            <h1>{{trainer?.club.title}}</h1>
             <ul>
-              <li>Сообщений <span>73</span></li>
-              <li>Подписчиков <span>73</span></li>
-              <li>Достижений <span>3</span></li>
+              <li>Опыт <span>{{trainer?.experience}}</span></li>
+              <li>Просмотров <span>{{trainer?.views}}</span></li>
+              <li>Достижений <span>0</span></li>
             </ul>
-            <p>Для прогрессивного развития нужен тренер.</p>
+            <p>{{trainer?.description}}</p>
           </div>
-          <section class="communicate">
+          <!-- <section class="communicate">
             <nav>
-              <a href="">Подписаться</a>
-              <a href="">Сообщение</a>
+              <a href="">{{trainer?.email}}</a>
+              <a href="">{{trainer?.phone}}</a>
             </nav>
-          </section>
+          </section> -->
       </section>
       <section class="service">
-        <h1>Персональный тренер (купить занятие)</h1>
+        <h1>Образование: {{trainer?.education}}</h1>
         <article>
           <figure></figure>
           <h1>Видео тренировки</h1>
