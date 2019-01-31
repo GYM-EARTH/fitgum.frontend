@@ -23,6 +23,7 @@ export class ClubsShowComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.clubsService.getBy(params['id']).subscribe(clubs => {
         this.club = clubs;
+        console.log(this.club);
       });
     });
 

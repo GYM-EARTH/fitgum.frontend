@@ -39,6 +39,7 @@ aside nav a:nth-child(4) {
     line-height: 200px;
     font-weight: bold;
     box-shadow: var(--shadow);
+    border-radius: 4px;
 }
 .worktime {
 
