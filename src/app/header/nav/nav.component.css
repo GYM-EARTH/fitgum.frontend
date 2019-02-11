@@ -23,7 +23,7 @@ a::after {
     position: absolute;
     left: 22px;
     right: 22px;
-    bottom: 0px;
+    bottom: -22px;
     height: 1px;
     width: 3px;
     margin: auto;
