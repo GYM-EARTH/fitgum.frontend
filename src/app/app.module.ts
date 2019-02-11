@@ -9,6 +9,7 @@ import { NewsService } from './news.service';
 import { ClubsService } from './clubs.service';
 import { TrainersService } from './trainers.service';
 import { PassportService } from './passport.service';
+import { CookieService } from './cookie.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -70,7 +71,7 @@ import { TermsComponent } from './footer/terms/terms.component';
       apiKey: 'AIzaSyA4dy2oYRqxWaIGS-BaTEzGSIjZdhvfghU'
     })
   ],
-  providers: [NewsService, ClubsService, TrainersService, PassportService],
+  providers: [NewsService, ClubsService, TrainersService, PassportService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
