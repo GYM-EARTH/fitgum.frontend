@@ -1,7 +1,7 @@
 <main>
-  <form action="">
-    <input type="text" placeholder="Логин">
-    <input type="text" placeholder="Пароль">
+  <form  (ngSubmit)="onSubmit()" #heroForm="ngForm">
+    <input type="text" placeholder="Email" [(ngModel)]="data.email" name="email">
+    <input type="text" placeholder="Пароль" [(ngModel)]="data.password" name="password">
     <input type="submit" value="Go">
   </form>
 </main>

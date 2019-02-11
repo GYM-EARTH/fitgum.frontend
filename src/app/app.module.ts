@@ -8,6 +8,7 @@ import { AgmCoreModule } from '@agm/core';
 import { NewsService } from './news.service';
 import { ClubsService } from './clubs.service';
 import { TrainersService } from './trainers.service';
+import { PassportService } from './passport.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -69,7 +70,7 @@ import { TermsComponent } from './footer/terms/terms.component';
       apiKey: 'AIzaSyA4dy2oYRqxWaIGS-BaTEzGSIjZdhvfghU'
     })
   ],
-  providers: [NewsService, ClubsService, TrainersService],
+  providers: [NewsService, ClubsService, TrainersService, PassportService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
