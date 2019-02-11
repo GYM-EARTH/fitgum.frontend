@@ -11,6 +11,8 @@ import { ClubsShowComponent } from './clubs/clubs-show/clubs-show.component';
 import { TrainersShowComponent } from './trainers/trainers-show/trainers-show.component';
 import { LiveComponent } from './live/live.component';
 import { MapComponent } from './map/map.component';
+import { PrivacyComponent } from './footer/privacy/privacy.component';
+import { TermsComponent } from './footer/terms/terms.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,9 +25,9 @@ const routes: Routes = [
   { path: 'clubs/:id', component: ClubsShowComponent },
   { path: 'trainers/:id', component: TrainersShowComponent },
   { path: 'live', component: LiveComponent },
-  { path: 'live#1', component: LiveComponent },
-  { path: 'map', component: MapComponent }
-
+  { path: 'map', component: MapComponent },
+  { path: 'privacy-policy', component: PrivacyComponent },
+  { path: 'terms-of-use', component: TermsComponent }
 ];
 
 @NgModule({

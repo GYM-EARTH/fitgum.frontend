@@ -5,7 +5,11 @@
     display: block;
     margin-top: 22px;
 }
-p {
+a {
     line-height: 44px;
     text-align: center;
+    text-decoration: none;
+    padding: 0 22px;
+    color: var(--light);
+    font-size: 14px;
 }
