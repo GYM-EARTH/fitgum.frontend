@@ -6,7 +6,6 @@
 .light app-news-index article figure { border-color: white; }
 .light app-news-index article a { color: var(--dark); }
 .light app-news-index article p { color: var(--dark); }
-.light app-news-index article::before { background-image: url(/assets/icons/star-w.svg); }
 .light app-trainers-index article figure::after { border-color: white; }
 .light app-trainers-index article figure { border-color: white; }
 .light app-news-list h1 { color: var(--light); }

@@ -11,18 +11,6 @@ article:hover {
     z-index: 1;
     box-shadow: 0 0 15px rgba(0,0,0,.1);
 }
-article::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
-}
 article::after {
     content: "";
     position: absolute;
