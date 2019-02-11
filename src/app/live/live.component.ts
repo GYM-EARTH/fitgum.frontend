@@ -13,7 +13,7 @@ export class LiveComponent implements OnInit {
 
   ngOnInit() {
   
-    this.n.getUserMedia({ video: true, audio: true }, this.gotMedia, function () {})
+    // this.n.getUserMedia({ video: true, audio: true }, this.gotMedia, function () {})
  
   }
 
