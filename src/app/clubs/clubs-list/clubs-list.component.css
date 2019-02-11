@@ -3,8 +3,8 @@
 }
 section {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: "h h h h h h h h h h";
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "h h h h h h h";
     grid-gap: 10px;
 }
 h1 {

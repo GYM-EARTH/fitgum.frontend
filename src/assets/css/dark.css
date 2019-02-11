@@ -1,5 +1,6 @@
 .dark { background: black; }
 .dark .theme { color: white; }
+.dark app-header { background: #111; }
 .dark app-news-index article { background: black; }
 .dark app-news-index article figure { border-color: black; }
 .dark app-news-index article a { color: var(--light); }
@@ -7,7 +8,8 @@
 .dark app-news-index article::before { background-image: url(/assets/icons/star-b.svg); }
 .dark app-trainers-index article figure::after { border-color: black; }
 .dark app-news-list h1 { color: var(--dark); }
-.dark .theme::before { background-image: url(/assets/icons/light.svg); }
+.dark .theme::before { background-image: url(/assets/icons/theme-light.svg); }
+.dark .login::before { background-image: url(/assets/icons/login-light.svg); }
 .dark app-trainers-list h1 { color: var(--dark); }
 .dark app-trainers-index h1 { color: var(--light); }
 .dark app-header .login { color: white; }
