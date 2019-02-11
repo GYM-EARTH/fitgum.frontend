@@ -22,9 +22,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
-    this.theme = 'Dark';
-  }
+  ngOnInit() {}
 
   changeTheme() {
     if (this.theme == 'Light') {
