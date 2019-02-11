@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+p {
+    background: var(--purple);
+    color: white;
+    line-height: 44px;
+    text-align: center;
+}
