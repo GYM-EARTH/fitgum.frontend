@@ -9,7 +9,10 @@ import { PassportService } from '../passport.service';
 })
 export class LoginComponent implements OnInit {
 
-  public data = {};
+  public data = {
+    "email":"",
+    "password":""
+  };
   
   constructor(private passportService: PassportService) { }
 
