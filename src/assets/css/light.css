@@ -1,6 +1,7 @@
 .light { background: white; }
 .light .theme { color: black; }
-.light app-header { background: #eee; }
+.light app-header,
+.light app-footer { background: #eee; }
 .light app-news-index article { background: white; }
 .light app-news-index article figure { border-color: white; }
 .light app-news-index article a { color: var(--dark); }

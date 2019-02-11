@@ -1,0 +1,11 @@
+:host {
+    padding: 0 90px;
+    grid-area: footer;
+    min-width: 1366px;
+    display: block;
+    margin-top: 22px;
+}
+p {
+    line-height: 44px;
+    text-align: center;
+}

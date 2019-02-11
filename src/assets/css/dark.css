@@ -1,6 +1,7 @@
 .dark { background: black; }
 .dark .theme { color: white; }
-.dark app-header { background: #111; }
+.dark app-header,
+.dark app-footer { background: #111; }
 .dark app-news-index article { background: black; }
 .dark app-news-index article figure { border-color: black; }
 .dark app-news-index article a { color: var(--light); }

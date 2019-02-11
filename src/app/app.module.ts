@@ -30,6 +30,9 @@ import { ClubsShowComponent } from './clubs/clubs-show/clubs-show.component';
 import { TrainersShowComponent } from './trainers/trainers-show/trainers-show.component';
 import { LiveComponent } from './live/live.component';
 import { MapComponent } from './map/map.component';
+import { FooterComponent } from './footer/footer.component';
+import { PrivacyComponent } from './footer/privacy/privacy.component';
+import { TermsComponent } from './footer/terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { MapComponent } from './map/map.component';
     ClubsShowComponent,
     TrainersShowComponent,
     LiveComponent,
-    MapComponent
+    MapComponent,
+    FooterComponent,
+    PrivacyComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
