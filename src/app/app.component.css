@@ -1,17 +1,5 @@
 :host {
     display: block;
-    /* background-repeat: no-repeat;
-    background-position:
-    34% 12%,
-    100% 5%,
-    -2% 30%,
-    69% 30%,
-    35% 56%,
-    74% 66%,
-    1% 86%,
-    71% 75%,
-    36% 74%,
-    85% 75%; */
     position: relative;
     height: 100%;
 }
