@@ -7,6 +7,7 @@
 .dark app-news-index article p { color: var(--light); }
 .dark app-news-index article::before { background-image: url(/assets/icons/star-b.svg); }
 .dark app-trainers-index article figure::after { border-color: black; }
+.dark app-trainers-index article figure { border-color: black; }
 .dark app-news-list h1 { color: var(--dark); }
 .dark .theme::before { background-image: url(/assets/icons/theme-light.svg); }
 .dark .login::before { background-image: url(/assets/icons/login-light.svg); }
@@ -16,6 +17,7 @@
 .dark app-clubs-index { background: black; }
 .dark app-news-show article figure { border-color: black; }
 .dark app-trainers-show .userbar figure::after { border-color: black; }
+.dark app-trainers-show .userbar figure { border-color: black; }
 
 /* .dark app-root {
     background-image:

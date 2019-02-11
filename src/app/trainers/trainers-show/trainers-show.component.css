@@ -27,21 +27,33 @@ aside {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    border: 4px solid var(--purple);
+    border-width: 4px;
+    border-style: solid;
     position: relative;
 }
 .userbar figure::after {
     content: "";
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     position: absolute;
     top: 5px;
-    right: -5px;
-    border-width: 4px;
+    right: 5px;
+    border-width: 2px;
     border-style: solid;
     background: var(--green);
     z-index: 2;
+}
+.userbar figure::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid var(--purple);
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    box-shadow: var(--shadow);
 }
 .userbar figure img {
     width: 100%;
