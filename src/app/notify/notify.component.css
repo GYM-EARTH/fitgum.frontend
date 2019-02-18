@@ -2,10 +2,24 @@
     display: block;
     position: relative;
     z-index: 1;
+    background: var(--purple);
 }
 p {
-    background: var(--purple);
+    padding: 0 90px;
+    max-width: 1366px;
     color: white;
     line-height: 44px;
     text-align: center;
+    position: relative;
+}
+p::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    background: url(/assets/icons/close.svg) no-repeat;
+    cursor: pointer;
 }
