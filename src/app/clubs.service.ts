@@ -11,14 +11,14 @@ export class ClubsService {
   constructor(private http: HttpClient) { }
 
   public getAll() {
-    return this.http.get<{data: Clubs[]}>('https://api.fitgum.ru/clubs');
+    return this.http.get<{data: Clubs[]}>(environment.clubs);
   }
 
   public getTop() {
-    return this.http.get<{data: Clubs[]}>('https://api.fitgum.ru/clubs');
+    return this.http.get<{data: Clubs[]}>(environment.clubs);
   }
 
   public getBy(slug: string) {
-    return this.http.get<{Clubs}>(`https://api.fitgum.ru/clubs/${slug}`);
+    return this.http.get<{Clubs}>(`${environment.clubs}/${slug}`);
   }
 }

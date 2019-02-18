@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
+import { environment } from  '../environments/environment'
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -18,6 +19,6 @@ export class PassportService {
 
   auth(data) {
     const body = { email: data.email, password: data.password };
-    return this.http.post('https://fitgum.ru/api/login', body, httpOptions);
+    return this.http.post(environment.passport, body, httpOptions);
   }
 }

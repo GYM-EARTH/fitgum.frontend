@@ -4,7 +4,10 @@
 
 export const environment = {
   production: false,
-  api: 'https://api.fitgum.ru'
+  passport: 'https://fitgum.ru/api/login',
+  clubs: 'https://api.fitgum.ru/clubs',
+  news: 'https://api.fitgum.ru/news',
+  trainers: 'https://api.fitgum.ru/trainers'
 };
 
 /*
