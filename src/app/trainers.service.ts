@@ -10,14 +10,14 @@ export class TrainersService {
   constructor(private http: HttpClient) { }
 
   public getAll() {
-    return this.http.get<{data: Trainers[]}>('https://fitgum.ru/api/trainers');
+    return this.http.get<{data: Trainers[]}>('https://api.fitgum.ru/trainers');
   }
 
   public getTop() {
-    return this.http.get<{data: Trainers[]}>('https://fitgum.ru/api/trainers');
+    return this.http.get<{data: Trainers[]}>('https://api.fitgum.ru/trainers');
   }
 
   public getBy(slug: string) {
-    return this.http.get<{Trainers}>(`https://fitgum.ru/api/trainers/${slug}`);
+    return this.http.get<{Trainers}>(`https://api.fitgum.ru/trainers/${slug}`);
   }
 }
