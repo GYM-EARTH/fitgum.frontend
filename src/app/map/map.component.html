@@ -11,5 +11,11 @@
   <agm-marker *ngFor="let marker of markers"
   [iconUrl]="'https://fitgum.ru/assets/icons/geo.svg'"
   [latitude]="marker.latitude"
-  [longitude]="marker.longitude"></agm-marker>
+  [longitude]="marker.longitude">
+  <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
+    <ng-template>
+      My first Snazzy Info Window!
+    </ng-template>
+  </agm-snazzy-info-window>
+</agm-marker>
 </agm-map>

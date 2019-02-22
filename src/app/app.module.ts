@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 
 import { NewsService } from './news.service';
 import { ClubsService } from './clubs.service';
@@ -73,7 +74,8 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
     FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA4dy2oYRqxWaIGS-BaTEzGSIjZdhvfghU'
-    })
+    }),
+    AgmSnazzyInfoWindowModule
   ],
   providers: [NewsService, ClubsService, TrainersService, PassportService, CookieService],
   bootstrap: [AppComponent]
