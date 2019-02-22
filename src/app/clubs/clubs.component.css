@@ -1,13 +1,10 @@
 :host {
     width: 1366px;
-    margin: auto;
+    margin: 44px auto;
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
     z-index: 1;
-}
-main {
-    margin: 44px 0;
 }
 p {
     font-size: 14px;
