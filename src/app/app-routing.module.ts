@@ -13,6 +13,7 @@ import { LiveComponent } from './live/live.component';
 import { MapComponent } from './map/map.component';
 import { PrivacyComponent } from './footer/privacy/privacy.component';
 import { TermsComponent } from './footer/terms/terms.component';
+import { VacanciesComponent } from './vacancies/vacancies.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'live', component: LiveComponent },
   { path: 'map', component: MapComponent },
   { path: 'privacy-policy', component: PrivacyComponent },
-  { path: 'terms-of-use', component: TermsComponent }
+  { path: 'terms-of-use', component: TermsComponent },
+  { path: 'jobs', component: VacanciesComponent }
 ];
 
 @NgModule({

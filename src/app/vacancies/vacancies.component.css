@@ -1,0 +1,16 @@
+:host {
+    width: 1366px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+p {
+    font-size: 14px;
+    color: var(--dark);
+    line-height: 44px;
+    font-weight: bold;
+}
