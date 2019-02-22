@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  passport: 'https://fitgum.ru/api/login',
+  passport: 'https://api.fitgum.ru/login',
   clubs: 'https://api.fitgum.ru/clubs',
   news: 'https://api.fitgum.ru/news',
   trainers: 'https://api.fitgum.ru/trainers'
