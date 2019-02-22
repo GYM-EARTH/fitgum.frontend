@@ -1,11 +1,5 @@
-section {
+:host {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: "h h h h h h h";
     grid-column-gap: 22px;
-}
-h1 {
-    font-size: 14px;
-    line-height: 44px;
-    grid-area: h;
 }

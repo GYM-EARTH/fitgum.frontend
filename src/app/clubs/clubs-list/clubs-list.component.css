@@ -1,28 +1,5 @@
 :host {
-    grid-area: clubs;
-}
-section {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: "h h h h h h h";
     grid-column-gap: 22px;
 }
-h1 {
-    font-size: 14px;
-    line-height: 44px;
-    grid-area: h;
-    color: var(--light);
-}
-app-clubs-index {
-    display: block;
-    transition: transform .3s;
-}
-app-clubs-index:hover {
-    transform: scale(1.05);
-    z-index: 1;
-    /* box-shadow: 0 0 15px rgba(0,0,0,.1); */
-}
-/* .gold {background: var(--gold);}
-.silver {background: var(--silver);}
-.bronze {background: var(--bronze);}
-.platinum {background: var(--platinum);} */

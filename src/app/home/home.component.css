@@ -1,10 +1,10 @@
 :host {
     width: 1366px;
-    margin: auto;
+    margin: 44px auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "news" "trainers" "clubs";
-    grid-row-gap: 22px;
+    grid-row-gap: 44px;
     position: relative;
     z-index: 1;
 }
