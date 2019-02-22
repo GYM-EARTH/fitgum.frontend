@@ -2,9 +2,7 @@
     width: 1366px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
     position: relative;
     z-index: 1;
 }
