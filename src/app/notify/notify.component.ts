@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from '../cookie.service';
 
 @Component({
   selector: 'app-notify',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotifyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cookieService: CookieService) { }
 
   ngOnInit() {
+    this.cookieService.setCookie('notify', 'true', {'expires': 7});
   }
 
 }
