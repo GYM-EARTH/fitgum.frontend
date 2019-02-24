@@ -1,7 +1,9 @@
 <main>
   <form  (ngSubmit)="onSubmit()" #heroForm="ngForm">
-    <input type="text" placeholder="Email" [(ngModel)]="data.email" name="email">
-    <input type="text" placeholder="Пароль" [(ngModel)]="data.password" name="password">
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="|" [(ngModel)]="data.email" name="email">
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="|" [(ngModel)]="data.password" name="password">
     <input type="submit" value="Go">
   </form>
 </main>

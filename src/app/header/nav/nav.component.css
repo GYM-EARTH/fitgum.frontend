@@ -11,13 +11,13 @@ a {
     display: inline-block;
     text-shadow: var(--shadow)
 }
-a:nth-child(4) { color: var(--pink); }
-a:nth-child(5) { color: var(--purple); }
-a:nth-child(1) { color: var(--blue); }
-a:nth-child(2) { color: var(--green); }
-a:nth-child(3) { color: var(--orange); }
-a:nth-child(6) { color: var(--red); }
-a:nth-child(7) { color: var(--cyan); }
+a:nth-child(4) { color: white; }
+a:nth-child(5) { color: white; }
+a:nth-child(1) { color: white; }
+a:nth-child(2) { color: white; }
+a:nth-child(3) { color: white; }
+a:nth-child(6) { color: white; }
+a:nth-child(7) { color: white; }
 
 a::after {
     content: "";
@@ -29,15 +29,16 @@ a::after {
     width: 3px;
     margin: auto;
     transition: all .3s;
+    border-radius: 1px;
 }
 a:hover::after,
 .active::after {
-    width: 44px;
+    width: 77px;
 }
-a:nth-child(4)::after { background: var(--pink); }
-a:nth-child(5)::after { background: var(--purple); }
-a:nth-child(1)::after { background: var(--blue); }
-a:nth-child(2)::after { background: var(--green); }
-a:nth-child(3)::after { background: var(--orange); }
-a:nth-child(6)::after { background: var(--red); }
-a:nth-child(7)::after { background: var(--cyan); }
+a:nth-child(4)::after { background: white; }
+a:nth-child(5)::after { background: white; }
+a:nth-child(1)::after { background: white; }
+a:nth-child(2)::after { background: white; }
+a:nth-child(3)::after { background: white; }
+a:nth-child(6)::after { background: white; }
+a:nth-child(7)::after { background: white; }

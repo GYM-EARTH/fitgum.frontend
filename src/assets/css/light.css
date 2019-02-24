@@ -1,7 +1,4 @@
 .light { background: white; }
-.light .theme { color: black; }
-.light app-header,
-.light app-footer { background: #eee; }
 .light app-news-index article { background: white; }
 .light app-news-index article figure { border-color: white; }
 .light app-news-index article a { color: var(--dark); }
@@ -9,8 +6,6 @@
 .light app-trainers-index article figure::after { border-color: white; }
 .light app-trainers-index article figure { border-color: white; }
 .light app-news-list h1 { color: var(--light); }
-.light .theme::before { background-image: url(/assets/icons/theme-dark.svg); }
-.light .login::before { background-image: url(/assets/icons/login-dark.svg); }
 .light app-trainers-list h1 { color: var(--light); }
 .light app-trainers-index h1 { color: var(--dark); }
 .light app-header .login { color: black; }

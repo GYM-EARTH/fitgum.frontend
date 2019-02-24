@@ -22,38 +22,71 @@ input {
 }
 form {
     margin: 60px auto;
-    width: 350px;
+    width: 300px;
     display: flex;
     flex-flow: column;
+    background: url('/assets/icons/login-b.svg') 50% 0 no-repeat;
+    padding-top: 130px;
 }
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
     height: 44px;
     outline: none;
     border: none;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    background: var(--purple);
     padding: 0 22px;
     color: white;
-    font-weight: bold;
-    font-size: 14px;
-    box-shadow: var(--shadow);
+    font-size: 16px;
+    background: var(--purple);
+    margin-bottom: 22px;
+    box-shadow: var(--inset);
+    text-shadow: 0 0 10px white;
+    border-radius: 50px;
+    text-align: center;
+    animation: field 3s 3s infinite both;
 }
-input[type="text"]::placeholder {
+input[type="text"]:focus,
+input[type="password"]:focus {
+    box-shadow: var(--inset), 0 0 10px var(--purple);
+    animation-play-state: paused;
+}
+input[type="text"]:hover,
+input[type="password"]:hover {
+    background: var(--pink);
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
     color: white;
-    font-weight: bold; 
+    
+}
+label {
+    line-height: 22px;
+    display: block;
+    color: var(--dark);
+    font-size: 12px;
+    margin-left: 22px;
+    font-weight: bold;
 }
 input[type=submit] {
-    width: 25%;
-    height: 44px;
+    animation: field 3s 3s infinite both;
+    margin: auto;
+    width: 100%;
+    height: 34px;
     outline: none;
     border: none;
-    border-radius: 50px;
     color: white;
     font-weight: bold;
     font-size: 14px;
-    background: #B8E986;
+    background: #b8e986;
     cursor: pointer;
+    border-radius: 50px;
+    box-shadow: var(--inset), 0 0 10px var(--green);
+    text-shadow: 0 0 10px white;
+}
+input[type=submit]:hover {
+    box-shadow: var(--inset), 0 0 20px var(--green);
+}
+input {
+    transition: all .3s;
 }
 
 .ng-valid[required], .ng-valid.required  {
@@ -62,4 +95,11 @@ input[type=submit] {
   
   .ng-invalid:not(form)  {
     border-left: 5px solid #a94442; /* red */
+  }
+
+
+  @keyframes field {
+      from { opacity: 1; }
+      50% { opacity: .9; }
+      to { opacity: 1; }
   }

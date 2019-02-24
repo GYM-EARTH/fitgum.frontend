@@ -5,6 +5,8 @@
     position: relative;
     z-index: 1;
     min-width: 1366px;
+    background: var(--purple);
+    box-shadow: var(--inset);
 }
 header a {
     text-shadow: var(--shadow);
@@ -14,10 +16,10 @@ header a {
     font-weight: bold;
 }
 header a span:first-child {
-    color: var(--pink);
+    color: white;
 }
 header a span:last-child {
-    color: var(--purple);
+    color: white;
 }
 .theme {
     font-size: 16px;
@@ -51,3 +53,6 @@ header a span:last-child {
     background-repeat: no-repeat;
     vertical-align: middle;
 }
+
+.theme::before { background-image: url(/assets/icons/theme.svg); }
+.login::before { background-image: url(/assets/icons/login.svg); }

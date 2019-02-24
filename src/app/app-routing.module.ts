@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'news/:id', component: NewsShowComponent },
   { path: 'clubs/:id', component: ClubsShowComponent },
   { path: 'trainers/:id', component: TrainersShowComponent },
-  { path: 'live', component: LiveComponent },
+  { path: 'chat', component: LiveComponent },
   { path: 'map', component: MapComponent },
   { path: 'privacy-policy', component: PrivacyComponent },
   { path: 'terms-of-use', component: TermsComponent },
