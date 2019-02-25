@@ -1,9 +1,11 @@
 <main>
   <form  (ngSubmit)="onSubmit()" #heroForm="ngForm">
+    <h1>Login</h1>
     <label for="email">Email</label>
-    <input type="text" id="email" placeholder="|" [(ngModel)]="data.email" name="email">
+    <input type="text" id="email" placeholder="you@name.com" [(ngModel)]="data.email" name="email">
     <label for="password">Password</label>
-    <input type="password" id="password" placeholder="|" [(ngModel)]="data.password" name="password">
+    <input type="password" id="password" placeholder="password" [(ngModel)]="data.password" name="password">
     <input type="submit" value="Go">
+    <p><a href="/register">Регистрация!</a></p>
   </form>
 </main>

@@ -8,7 +8,7 @@
     position: relative;
     z-index: 1;
 }
-p {
+> p {
     font-size: 14px;
     color: var(--dark);
     line-height: 44px;
@@ -40,8 +40,6 @@ input[type="password"] {
     margin-bottom: 22px;
     box-shadow: var(--inset);
     text-shadow: 0 0 10px white;
-    border-radius: 50px;
-    text-align: center;
     animation: field 3s 3s infinite both;
 }
 input[type="text"]:focus,
@@ -91,15 +89,34 @@ input {
 
 .ng-valid[required], .ng-valid.required  {
     border-left: 5px solid #42A948; /* green */
-  }
+}
   
-  .ng-invalid:not(form)  {
+.ng-invalid:not(form)  {
     border-left: 5px solid #a94442; /* red */
-  }
-
+}
+form p {
+    text-align: center;
+    margin: 22px 0;
+}
+form p a {
+    font-size: 16px;
+    line-height: 44px;
+    color: var(--orange);
+    font-weight: bold;
+    text-decoration: none;
+}
+form p a:hover {
+    color: var(--pink);
+}
+h1 {
+    line-height: 44px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--purple);
+}
 
   @keyframes field {
       from { opacity: 1; }
-      50% { opacity: .9; }
+      50% { opacity: .7; }
       to { opacity: 1; }
   }
