@@ -1,14 +1,17 @@
 :host {
-    padding: 22px 44px;
+    padding: 0 44px;
     grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     position: relative;
     z-index: 1;
     min-width: 1366px;
-    max-width: 1366px;
-    display: block;
+    border-bottom: 3px solid var(--pink);
+    box-shadow: 0 0 10px var(--pink);
+    background: white;
 }
 header {
-    text-align: center;
+    margin: auto;
 }
 header a {
     text-shadow: var(--shadow);
@@ -23,6 +26,22 @@ header a span:first-child {
 header a span:last-child {
     color: var(--purple);
 }
+.menu {
+    align-self: center;
+}
+.menu a {
+    padding: 0 22px;
+    margin: 0 22px;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 44px;
+    position: relative;
+    display: inline-block;
+    color: var(--purple);
+    font-weight: bold;
+    text-shadow: 0 0 10px var(--purple);
+
+}
 .theme {
     font-size: 16px;
     font-weight: bold;
@@ -30,15 +49,6 @@ header a span:last-child {
     padding: 0 22px;
     text-shadow: var(--shadow);
     cursor: pointer;
-}
-.theme::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-right: 22px;
 }
 .login {
     font-size: 16px;
@@ -48,15 +58,3 @@ header a span:last-child {
     text-shadow: var(--shadow);  
     text-decoration: none;
 }
-.login::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-right: 22px;
-}
-
-.theme::before { background-image: url(/assets/icons/theme.svg); }
-.login::before { background-image: url(/assets/icons/login-b.svg); background-size: contain; }

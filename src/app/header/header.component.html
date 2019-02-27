@@ -3,15 +3,16 @@
 </header>
 <app-nav></app-nav>
 <!-- <span class="theme" (click)=changeTheme()>{{theme}}</span> -->
+<nav class="menu">
+  <ng-template [ngIf]="!auth">
+    <a routerLink="/login" href="/login">Войти</a>
+  </ng-template>
 
-<ng-template [ngIf]="!auth">
-  <a class="login" routerLink="/login" href="/login">Войти</a>
-</ng-template>
+  <ng-template [ngIf]="auth">
+    <a class="login" href="#">Привет!</a>
+  </ng-template>
 
-<ng-template [ngIf]="auth">
-  <a class="login" href="#">Приветствуем!</a>
-</ng-template>
-
-<ng-template [ngIf]="!auth">
-  <a class="login" routerLink="/register" href="/register">Регистрация</a>
-</ng-template>
+  <!-- <ng-template [ngIf]="!auth">
+    <a routerLink="/register" href="/register">Регистрация</a>
+  </ng-template> -->
+</nav>

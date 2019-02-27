@@ -19,6 +19,7 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'news', component: NewsComponent },
+  { path: 'news/:id', component: NewsShowComponent },
   { path: 'flyers', component: FlaersComponent },
   { path: 'trainers', component: TrainersComponent },
   { path: 'clubs', component: ClubsComponent },

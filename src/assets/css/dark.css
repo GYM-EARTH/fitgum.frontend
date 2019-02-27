@@ -1,6 +1,5 @@
 .dark { background: black; }
 .dark app-news-index article { background: black; }
-.dark app-news-index article figure { border-color: black; }
 .dark app-news-index article a { color: var(--light); }
 .dark app-news-index article p { color: var(--light); }
 .dark app-trainers-index article figure::after { border-color: black; }

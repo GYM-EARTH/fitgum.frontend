@@ -24,10 +24,6 @@ article header h1 {
     line-height: 44px;
 }
 article figure {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-width: 1px;
-    border-style: solid;
     margin-bottom: 44px;
     height: 300px;
     overflow: hidden;
