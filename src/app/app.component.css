@@ -7,4 +7,14 @@ div {
     max-width: 1366px;
     margin: auto;
     display: flex;
+    justify-content: space-between;
+}
+img {
+    opacity: .5;
+    width: 44px;
+    transition: all .3s;
+    cursor: pointer;
+}
+img:hover {
+    opacity: 1;
 }
