@@ -1,0 +1,43 @@
+:host {
+    display: block;
+    margin: 44px 0;
+}
+form {
+    width: 550px;
+    height: 100px;
+    padding: 0 44px 0 88px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--purple);
+    overflow: hidden;
+    background: var(--purple) url('/assets/star.svg') -50px 0 no-repeat;
+}
+input {
+    line-height: 44px;
+    border: none;
+    outline: none;
+    box-shadow: var(--shadow);
+}
+input[type="text"] {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 70%;
+    font-size: 14px;
+    padding: 0 22px;
+}
+input[type="submit"] {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 30%;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background: var(--pink)
+}
+p {
+    line-height: 44px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 0 22px;
+}

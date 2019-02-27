@@ -1,0 +1,28 @@
+:host {
+    margin: 44px;
+    display: block;
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--light);
+    transition: all .3s;
+}
+a:hover {
+    color: var(--purple);
+}
+span {
+    font-size: 14px;
+    display: inline;
+    color: var(--yellow);
+    background: var(--purple);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 10px var(--yellow);
+    transition: all .3s;
+}
+a:hover span {
+    box-shadow: 0 0 20px var(--yellow);
+}

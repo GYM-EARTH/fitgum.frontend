@@ -3,3 +3,8 @@
     position: relative;
     height: 100%;
 }
+div {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+}

@@ -39,6 +39,8 @@ import { TermsComponent } from './footer/terms/terms.component';
 import { NotifyComponent } from './notify/notify.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
 import { RegisterComponent } from './register/register.component';
+import { UpgradeComponent } from './upgrade/upgrade.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +69,9 @@ import { RegisterComponent } from './register/register.component';
     TermsComponent,
     NotifyComponent,
     VacanciesComponent,
-    RegisterComponent
+    RegisterComponent,
+    UpgradeComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule,
