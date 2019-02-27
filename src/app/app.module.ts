@@ -41,6 +41,7 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
 import { RegisterComponent } from './register/register.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { PleerComponent } from './pleer/pleer.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
     VacanciesComponent,
     RegisterComponent,
     UpgradeComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    PleerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+div {
+    height: 70px;
+    background: rgba(189, 16, 224, .7) url('/assets/bg-bot.svg') 0 100% no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 90px;
+    box-shadow: var(--inset);
+}
+figure {
+    box-shadow: var(--shadow);
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+    background: white;
+}

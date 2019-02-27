@@ -2,7 +2,7 @@
     display: block;
     position: relative;
     z-index: 1;
-    background: var(--purple);
+    background: var(--purple) url('/assets/bg-top.svg') 0 0 no-repeat;
     box-shadow: var(--inset);
 }
 p {
