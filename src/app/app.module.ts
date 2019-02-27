@@ -38,6 +38,7 @@ import { PrivacyComponent } from './footer/privacy/privacy.component';
 import { TermsComponent } from './footer/terms/terms.component';
 import { NotifyComponent } from './notify/notify.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
     PrivacyComponent,
     TermsComponent,
     NotifyComponent,
-    VacanciesComponent
+    VacanciesComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

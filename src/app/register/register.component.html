@@ -1,11 +1,13 @@
 <main>
   <form  (ngSubmit)="onSubmit()" #heroForm="ngForm">
-    <h1>Войти</h1>
+    <h1>Регистрация</h1>
+    <label for="name">Имя</label>
+    <input type="text" id="name" placeholder="Ваше полное имя" [(ngModel)]="data.name" name="name">
     <label for="email">Email</label>
     <input type="text" id="email" placeholder="you@name.com" [(ngModel)]="data.email" name="email">
     <label for="password">Пароль</label>
     <input type="password" id="password" placeholder="password" [(ngModel)]="data.password" name="password">
     <input type="submit" value="Go">
-    <p><a routerLink="/register" href="/register">Регистрация!</a></p>
+    <p><a href="/register">Войти!</a></p>
   </form>
 </main>

@@ -1,12 +1,14 @@
 :host {
     padding: 22px 44px;
-    display: flex;
     grid-area: header;
     position: relative;
     z-index: 1;
     min-width: 1366px;
-    background: var(--purple);
-    box-shadow: var(--inset);
+    max-width: 1366px;
+    display: block;
+}
+header {
+    text-align: center;
 }
 header a {
     text-shadow: var(--shadow);
@@ -16,10 +18,10 @@ header a {
     font-weight: bold;
 }
 header a span:first-child {
-    color: white;
+    color: var(--pink);
 }
 header a span:last-child {
-    color: white;
+    color: var(--purple);
 }
 .theme {
     font-size: 16px;
@@ -36,6 +38,7 @@ header a span:last-child {
     height: 20px;
     background-repeat: no-repeat;
     vertical-align: middle;
+    margin-right: 22px;
 }
 .login {
     font-size: 16px;
@@ -52,7 +55,8 @@ header a span:last-child {
     height: 20px;
     background-repeat: no-repeat;
     vertical-align: middle;
+    margin-right: 22px;
 }
 
 .theme::before { background-image: url(/assets/icons/theme.svg); }
-.login::before { background-image: url(/assets/icons/login.svg); }
+.login::before { background-image: url(/assets/icons/login-b.svg); background-size: contain; }

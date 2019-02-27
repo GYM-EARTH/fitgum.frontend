@@ -19,6 +19,12 @@ export class PassportService {
 
   auth(data) {
     const body = { email: data.email, password: data.password };
-    return this.http.post(environment.passport, body, httpOptions);
+    return this.http.post(environment.passport.login, body, httpOptions);
   }
+
+  register(data) {
+    const body = { name: data.name, email: data.email, password: data.password };
+    return this.http.post(environment.passport.register, body, httpOptions);
+  }
+
 }

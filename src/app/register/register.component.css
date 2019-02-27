@@ -28,10 +28,10 @@ form {
 }
 input[type="text"],
 input[type="password"] {
+    border-radius: 50px;
     height: 44px;
     outline: none;
     border: 1px solid var(--pink);
-    border-radius: 50px;
     padding: 0 22px;
     color: white;
     font-size: 16px;
@@ -79,12 +79,8 @@ input[type=submit] {
     box-shadow: var(--inset), 0 0 10px var(--green);
     text-shadow: 0 0 10px white;
 }
-
 input[type=submit]:hover {
     box-shadow: var(--inset), 0 0 20px var(--green);
-}
-input[type=submit]:focus {
-    box-shadow: none;
 }
 input {
     transition: all .3s;

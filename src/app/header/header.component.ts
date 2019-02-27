@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CookieService } from '../cookie.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,33 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  theme: string;
+  private auth: Boolean = false;
 
-  constructor() {
-    const hours = new Date().getHours()
-    const isDayTime = hours >= 6 && hours <= 18;
+  constructor(private cookieService: CookieService) {}
 
-    if (isDayTime) {
-      this.theme = 'Dark';
-      document.body.classList.add('light');
-    } else {
-      this.theme = 'Light';
-      document.body.classList.add('dark');
+  ngOnInit() {
+    if (this.cookieService.getCookie('login')) {
+      this.auth = true;
     }
   }
-
-  ngOnInit() {}
-
-  changeTheme() {
-    if (this.theme == 'Light') {
-      this.theme = 'Dark';
-      document.body.classList.remove('dark');
-      document.body.classList.add('light');
-    } else {
-      this.theme = 'Light';
-      document.body.classList.remove('light');
-      document.body.classList.add('dark');
-    }
-  }
-
 }

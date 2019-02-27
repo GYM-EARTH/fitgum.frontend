@@ -2,25 +2,25 @@ import { Component, OnInit } from '@angular/core';
 import { PassportService } from '../passport.service';
 import { CookieService } from '../cookie.service';
 import { Router } from '@angular/router';
-import { User } from '../user';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
 
-  private token;
-  public data = {
-    "email":"",
-    "password":""
-  };
-  
   constructor(
     private passportService: PassportService,
     private cookieService: CookieService,
-    private router: Router) { }
+    private router: Router
+  ) { }
+
+  public data = {
+    "name":"",
+    "email":"",
+    "password":""
+  };
 
   ngOnInit() {
     if (this.cookieService.getCookie('login')) {
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    this.passportService.auth(this.data).subscribe(
+    this.passportService.register(this.data).subscribe(
       user => {
         this.cookieService.setCookie('login',(user['success'].token), {});
         this.router.navigate(['/']);
