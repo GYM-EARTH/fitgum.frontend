@@ -2,7 +2,7 @@
     width: 1366px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     position: relative;
@@ -13,4 +13,18 @@ p {
     color: var(--dark);
     line-height: 44px;
     font-weight: bold;
+}
+form {
+    display: block;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    font-size: 14px;
+    border: 5px solid var(--pink);
+    box-shadow: 0 0 10px var(--purple);
+    margin: 44px auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
 }
