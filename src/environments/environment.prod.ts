@@ -1,6 +1,9 @@
 export const environment = {
   production: true,
-  passport: 'https://api.fitgum.ru/login',
+  passport: {
+    login: 'https://api.fitgum.ru/login',
+    register: 'https://api.fitgum.ru/register'
+  },
   clubs: 'https://api.fitgum.ru/clubs',
   news: 'https://api.fitgum.ru/news',
   trainers: 'https://api.fitgum.ru/trainers'
