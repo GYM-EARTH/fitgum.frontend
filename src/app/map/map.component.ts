@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClubsService } from '../clubs.service';
+import { VacanciesService } from '../vacancies.service';
 
 @Component({
   selector: 'app-map',
@@ -10,19 +11,21 @@ export class MapComponent implements OnInit {
   title: string = 'My first AGM project';
   public lat: number = 55.879244;
   public lng: number = 37.618423;
-  public markers;
   
-  constructor(private clubsService: ClubsService) { }
+  public markers;
+  public vacanciesMarkers;
+  
+  constructor(
+    private clubsService: ClubsService,
+    private vacanciesService: VacanciesService) { }
 
   ngOnInit() {
-    this.clubsService.getAll().subscribe(clubs => { 
-      
+    this.clubsService.getAll().subscribe(clubs => {       
       this.markers = clubs.data;
-      // this.markers.map(club => {
-      //   club.latitude = Number(club.latitude);
-      //   club.longitude = Number(club.longitude);
-      // });
-    
+    });
+
+    this.vacanciesService.getAll().subscribe(vacancies => {       
+      this.vacanciesMarkers = vacancies.data;
     });
   }
 

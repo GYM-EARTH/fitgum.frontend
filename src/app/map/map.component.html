@@ -18,4 +18,15 @@
       </ng-template>
     </agm-snazzy-info-window>
   </agm-marker>
+
+  <agm-marker *ngFor="let marker of vacanciesMarkers"
+  [iconUrl]="'https://fitgum.ru/assets/icons/geo-vacancies.svg'"
+  [latitude]="marker.latitude"
+  [longitude]="marker.longitude">
+    <agm-snazzy-info-window [maxWidth]="200">
+      <ng-template>
+        {{marker.title}}
+      </ng-template>
+    </agm-snazzy-info-window>
+  </agm-marker>
 </agm-map>
