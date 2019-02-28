@@ -42,6 +42,9 @@ import { RegisterComponent } from './register/register.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { PleerComponent } from './pleer/pleer.component';
+import { VacanciesListComponent } from './vacancies/vacancies-list/vacancies-list.component';
+import { VacanciesIndexComponent } from './vacancies/vacancies-index/vacancies-index.component';
+import { VacanciesShowComponent } from './vacancies/vacancies-show/vacancies-show.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +76,10 @@ import { PleerComponent } from './pleer/pleer.component';
     RegisterComponent,
     UpgradeComponent,
     SubscribeComponent,
-    PleerComponent
+    PleerComponent,
+    VacanciesListComponent,
+    VacanciesIndexComponent,
+    VacanciesShowComponent
   ],
   imports: [
     BrowserModule,

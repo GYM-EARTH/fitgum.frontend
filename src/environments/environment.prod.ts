@@ -6,5 +6,6 @@ export const environment = {
   },
   clubs: 'https://api.fitgum.ru/clubs',
   news: 'https://api.fitgum.ru/news',
-  trainers: 'https://api.fitgum.ru/trainers'
+  trainers: 'https://api.fitgum.ru/trainers',
+  vacancies: 'https://api.fitgum.ru/vacancies'
 };
