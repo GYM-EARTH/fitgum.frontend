@@ -1,5 +1,5 @@
-<article [routerLink]="['/clubs', club.slug]">
+<article [ngStyle]="{'background-color': '#'+club.color}">
   <h1>{{club?.title}}</h1>
-  <figure><img src="https://fitgum.ru/files/{{club.logo}}" alt=""></figure>
+  <figure ><a [routerLink]="['/clubs', club.slug]"><img src="https://file.fitgum.ru/{{club.logo}}" alt=""></a></figure>
   <p>fitness club</p>
 </article>

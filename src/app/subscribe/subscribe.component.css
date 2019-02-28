@@ -6,9 +6,9 @@ form {
     height: 100px;
     padding: 0 44px 0 88px;
     border-radius: 10px;
-    box-shadow: 0 0 10px var(--purple);
     overflow: hidden;
-    background: var(--purple) url('/assets/star.svg') -50px 0 no-repeat;
+    box-shadow: 0 0 10px var(--purple);
+    background: var(--purple) url('/assets/star.svg') -43px 50% no-repeat;
 }
 input {
     line-height: 44px;

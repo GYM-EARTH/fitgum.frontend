@@ -1,9 +1,7 @@
 article {
     width: 170px;
     height: 94px;
-    /* background: white; */
     border-radius: 4px;
-    /* box-shadow: var(--shadow); */
     overflow: hidden;
     display: grid;
     padding-top: 10px;
@@ -11,23 +9,25 @@ article {
     grid-template-areas: "h h" "f f";
     grid-template-rows: auto 1fr;
     align-items: center;
+    box-shadow: var(--shadow);
+    transition: all .3s;
+}
+article:hover {
+    transform: translateY(-7px);
 }
 h1 {
     grid-area: h;
     height: 17px;
-    background: var(--purple);
-    color: white;
-    text-align: center;
+    color: var(--dark);
+    background: white;
     font-size: 12px;
-    text-transform: uppercase;
+    font-weight: normal;
     line-height: 17px;
     padding: 1px 10px 0;
 }
 article figure {
     grid-area: f;
     overflow: hidden;
-    height: 50px;
-    width: 50px;
     margin: 0 auto;
 }
 article figure img {

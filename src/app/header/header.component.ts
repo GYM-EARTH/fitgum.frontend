@@ -7,7 +7,7 @@ import { CookieService } from '../cookie.service';
 })
 export class HeaderComponent implements OnInit {
 
-  private auth: Boolean = false;
+  public auth: Boolean = false;
 
   constructor(private cookieService: CookieService) {}
 
