@@ -36,3 +36,26 @@ body {
     min-width: 1366px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+.si-float-wrapper {
+    position: absolute;
+    width: 200px;
+    background: white;
+    border-radius: 20px;
+    margin-left: -100px;
+    margin-top: -50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--dark);
+    box-shadow: var(--shadow);
+    line-height: 22px;
+}
+.si-float-wrapper button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}

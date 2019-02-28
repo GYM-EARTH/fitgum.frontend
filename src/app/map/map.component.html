@@ -12,10 +12,10 @@
   [iconUrl]="'https://fitgum.ru/assets/icons/geo.svg'"
   [latitude]="marker.latitude"
   [longitude]="marker.longitude">
-  <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
-    <ng-template>
-      My first Snazzy Info Window!
-    </ng-template>
-  </agm-snazzy-info-window>
-</agm-marker>
+    <agm-snazzy-info-window [maxWidth]="200">
+      <ng-template>
+        {{marker.title}}
+      </ng-template>
+    </agm-snazzy-info-window>
+  </agm-marker>
 </agm-map>
