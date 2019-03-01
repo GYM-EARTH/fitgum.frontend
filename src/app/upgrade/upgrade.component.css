@@ -1,6 +1,8 @@
 :host {
     margin: 44px;
     display: block;
+    width: 30%;
+    align-self: center;
 }
 a {
     text-decoration: none;

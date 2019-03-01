@@ -28,7 +28,7 @@ article figure {
     height: 100px;
 }
 article figure img {
-    max-height: 100%;
+    max-width: 100%;
 }
 article > a {
     display: block;
