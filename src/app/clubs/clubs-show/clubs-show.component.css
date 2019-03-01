@@ -31,6 +31,7 @@ aside nav a:nth-child(4) {
     color: var(--orange);
 }
 .tvclub {
+    box-shadow: var(--inset);
     height: 200px;
     background: var(--purple);
     color: white;

@@ -1,5 +1,5 @@
 :host {
-    margin: 44px;
+    margin: 22px;
     display: block;
     width: 30%;
     align-self: center;
@@ -7,17 +7,17 @@
 a {
     text-decoration: none;
     font-size: 14px;
-    color: var(--light);
+    color: white;
     transition: all .3s;
 }
 a:hover {
-    color: var(--purple);
+    color: var(--yellow);
 }
 span {
     font-size: 14px;
     display: inline;
     color: var(--yellow);
-    background: var(--purple);
+    background: white;
     border-radius: 5px;
     padding: 5px 10px;
     margin-right: 10px;
