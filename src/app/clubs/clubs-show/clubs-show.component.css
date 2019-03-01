@@ -2,7 +2,7 @@
     width: 1366px;
     margin: auto;
     display: grid;
-    grid-template-columns: 330px 1fr;
+    grid-template-columns: 230px 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     position: relative;

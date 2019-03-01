@@ -2,7 +2,7 @@
     width: 1366px;
     margin: 44px auto 0;
     display: grid;
-    grid-template-columns: 330px 1fr;
+    /* grid-template-columns: 230px 1fr; */
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     position: relative;
@@ -18,6 +18,7 @@ aside {
     color: var(--light);
 }
 .userbar {
+    width: 70%;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 44px;
@@ -29,8 +30,9 @@ aside {
     border-radius: 50%;
     border-width: 4px;
     border-style: solid;
-    border-color: var(--purple);
+    border-color: var(--pink);
     position: relative;
+    box-shadow: 0 0 10px var(--pink);
 }
 .userbar figure::after {
     content: "";
@@ -38,9 +40,9 @@ aside {
     height: 22px;
     border-radius: 50%;
     position: absolute;
-    top: 5px;
+    bottom: 5px;
     right: 5px;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
     border-color: white;
     background: var(--green);
@@ -50,12 +52,11 @@ aside {
     content: "";
     position: absolute;
     border-radius: 100%;
-    border: 2px solid var(--purple);
+    border: 2px solid var(--pink);
     top: -4px;
     right: -4px;
     bottom: -4px;
     left: -4px;
-    box-shadow: var(--shadow);
 }
 .userbar figure img {
     width: 100%;
@@ -105,6 +106,7 @@ aside {
 /* SERVICE  */
 
 .service {
+    width: 70%;
     margin-top: 44px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
