@@ -13,7 +13,7 @@
 </aside>
 <main>
   <article>
-    <figure class="tvclub">Реклама клуба</figure>
+    <figure class="tvclub" [ngStyle]="{'background-color': '#'+club.color}">Реклама клуба</figure>
     <section class="bar">
         <!-- <figure><img src="https://file.fitgum.ru/{{club?.logo}}" alt=""></figure> -->
         <app-clubs-index [club]="club"></app-clubs-index>

@@ -83,6 +83,14 @@ aside {
     color: var(--light);
     font-size: 14px;
 }
+.userbar div a {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 44px;
+    text-decoration: none;
+    color: var(--blue);
+    text-shadow: 0 0 10px var(--blue);
+}
 
 .communicate {
     width: 240px;
