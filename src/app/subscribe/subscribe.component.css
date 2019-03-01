@@ -1,5 +1,7 @@
 :host {
     display: block;
+    max-width: 1366px;
+    margin: auto;
 }
 form {
     width: 550px;
